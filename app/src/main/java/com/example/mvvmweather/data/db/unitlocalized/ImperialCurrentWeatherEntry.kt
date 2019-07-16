@@ -1,4 +1,4 @@
-package com.example.mvvmweather.ui.data.db.unitlocalized
+package com.example.mvvmweather.data.db.unitlocalized
 
 import androidx.room.ColumnInfo
 

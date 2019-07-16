@@ -1,10 +1,10 @@
-package com.example.mvvmweather.ui.data.db
+package com.example.mvvmweather.data.db
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.mvvmweather.ui.data.db.entity.CurrentWeatherEntry
+import com.example.mvvmweather.data.db.entity.CurrentWeatherEntry
 
 @Database(
     entities = [CurrentWeatherEntry::class],
@@ -16,7 +16,7 @@ abstract class ForecastDatabase : RoomDatabase() {
         abstract fun currentWeatherDao() : CurrentWeatherDao
 
         companion object {
-            @Volatile private var instance: com.example.mvvmweather.ui.data.db.ForecastDatabase? = null
+            @Volatile private var instance: com.example.mvvmweather.data.db.ForecastDatabase? = null
             private val LOCK = Any()
 
             operator fun invoke(context: Context) = instance ?: synchronized(LOCK) {
@@ -25,7 +25,7 @@ abstract class ForecastDatabase : RoomDatabase() {
 
             private fun buildDatabase(context: Context) =
                     Room.databaseBuilder(context.applicationContext,
-                        com.example.mvvmweather.ui.data.db.ForecastDatabase::class.java, "forecast.db")
+                        com.example.mvvmweather.data.db.ForecastDatabase::class.java, "forecast.db")
                         .build()
         }
     }

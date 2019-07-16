@@ -1,4 +1,4 @@
-package com.example.mvvmweather.ui.data.db.entity
+package com.example.mvvmweather.data.db.entity
 
 
 import androidx.room.Embedded

@@ -1,4 +1,4 @@
-package com.example.mvvmweather.ui.data.network
+package com.example.mvvmweather.data.network
 
 import okhttp3.Interceptor
 

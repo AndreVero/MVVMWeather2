@@ -1,8 +1,8 @@
-package com.example.mvvmweather.ui.data.network.response
+package com.example.mvvmweather.data.network.response
 
 
-import com.example.mvvmweather.ui.data.db.entity.CurrentWeatherEntry
-import com.example.mvvmweather.ui.data.db.entity.Location
+import com.example.mvvmweather.data.db.entity.CurrentWeatherEntry
+import com.example.mvvmweather.data.db.entity.Location
 import com.google.gson.annotations.SerializedName
 
 data class CurrentWeatherResponse(
