@@ -11,8 +11,6 @@ import com.example.mvvmweather.data.db.entity.CurrentWeatherEntry
     version = 1
 )
 abstract class ForecastDatabase : RoomDatabase() {
-
-    abstract class ForecastDatabase : RoomDatabase() {
         abstract fun currentWeatherDao() : CurrentWeatherDao
 
         companion object {
@@ -28,5 +26,4 @@ abstract class ForecastDatabase : RoomDatabase() {
                         com.example.mvvmweather.data.db.ForecastDatabase::class.java, "forecast.db")
                         .build()
         }
-    }
 }
