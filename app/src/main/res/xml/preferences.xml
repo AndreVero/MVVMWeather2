@@ -8,7 +8,7 @@
                 android:title="Use device location"
                 android:summary="Allow the app to get your location"
                 android:defaultValue="true"
-                android:disabledDependentsState="true"/>
+                android:disableDependentsState="true"/>
 
         <EditTextPreference
             android:key="CUSTOM_LOCATION"
@@ -19,8 +19,13 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-    android:title="Units">
-        <ListPrefe
-
+            android:title="Units">
+        <ListPreference
+            android:key="UNIT_SYSTEM"
+            android:title="Unit system"
+            android:summary="%s"
+            android:defaultValue="METRIC"
+            android:entries="@array/unitSystemEntries"
+            android:entryValues="@array/unitSystemValues"/>
     </PreferenceCategory>
 </androidx.preference.PreferenceScreen>
