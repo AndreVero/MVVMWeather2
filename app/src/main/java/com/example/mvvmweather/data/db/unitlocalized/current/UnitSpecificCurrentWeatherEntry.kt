@@ -1,4 +1,4 @@
-package com.example.mvvmweather.data.db.unitlocalized
+package com.example.mvvmweather.data.db.unitlocalized.current
 
 interface UnitSpecificCurrentWeatherEntry {
 

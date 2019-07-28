@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import com.example.mvvmweather.data.db.CurrentWeatherDao
 import com.example.mvvmweather.data.db.WeatherLocationDao
 import com.example.mvvmweather.data.db.entity.WeatherLocation
-import com.example.mvvmweather.data.db.unitlocalized.UnitSpecificCurrentWeatherEntry
+import com.example.mvvmweather.data.db.unitlocalized.current.UnitSpecificCurrentWeatherEntry
 import com.example.mvvmweather.data.network.WeatherNetworkDataSource
 import com.example.mvvmweather.data.network.response.CurrentWeatherResponse
 import com.example.mvvmweather.data.provider.LocationProvider
