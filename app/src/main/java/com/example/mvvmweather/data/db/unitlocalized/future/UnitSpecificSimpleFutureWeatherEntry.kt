@@ -1,6 +1,6 @@
 package com.example.mvvmweather.data.db.unitlocalized.future
 
-import java.time.LocalDate
+import org.threeten.bp.LocalDate
 
 interface UnitSpecificSimpleFutureWeatherEntry {
 
